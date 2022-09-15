@@ -11,3 +11,46 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.lightbox {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  float: left;
+}
+
+.activelight {
+  background-color: green;
+}
+
+.inactivelight {
+  background-color: red;
+}
+
+.activelight, .inactivelight, .nolight {
+  height: 100%;
+  width: 100%;
+}
+
+.row {
+  clear: left;
+}
+
+.boxGame {
+  height: 210px;
+  width: 210px;
+}
+
+.title {
+  background-color: #F7F7FF;
+  width: 50%;
+  margin: 40px auto;
+  padding: 30px;
+  font-size: 40px;
+  border: black solid;
+  font-weight: bold;
+  box-shadow: 0 10px 14px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: default;
+  text-align: center;
+}
