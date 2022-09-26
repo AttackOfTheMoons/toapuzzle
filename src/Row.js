@@ -7,8 +7,8 @@ const Row = ({ lights, rowNum, flip }) => (
         {lights.map((light, index) =>
             <Light
                 key={rowNum * 3 + index}
-                on={light}
-                flip={() => flip(rowNum * 3 + index)}
+                light={light}
+                flip={flip ? () => flip(rowNum * 3 + index) : undefined}
             />
         )}
     </div>
@@ -16,7 +16,7 @@ const Row = ({ lights, rowNum, flip }) => (
 Row.propTypes = {
   lights: PropTypes.array.isRequired,
   rowNum: PropTypes.number.isRequired,
-  flip: PropTypes.func.isRequired
+  flip: PropTypes.func
 }
 
 export default Row

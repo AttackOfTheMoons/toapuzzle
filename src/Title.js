@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const Title = ({ text }) => (
-    <div className="title">{text}</div>
+    <header>{text}</header>
 )
 Title.propTypes = {
   text: PropTypes.string.isRequired
